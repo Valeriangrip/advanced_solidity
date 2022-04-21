@@ -42,7 +42,7 @@ contract KaseiCoinCrowdsaleDeployer {
         KaseiCoin token = new KaseiCoin(name, symbol, 0);
         kasei_token_address = address(token);
 
-        KaseiCoinCrowdsale kasei_crowdsale = new KaseiCrowdsale(1, wallet, token);
+        KaseiCoinCrowdsale kasei_crowdsale = new KaseiCoinCrowdsale(1, wallet, token);
         kasei_crowdsale_address = address(kasei_crowdsale);
 
         token.addMinter(kasei_crowdsale_address);
